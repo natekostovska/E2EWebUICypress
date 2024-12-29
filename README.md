@@ -18,4 +18,4 @@ open your browser on http://localhost:4200/
 
 Terminal 2:
 
-npm install cypress --save-dev --force
+npx cypress open
