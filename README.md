@@ -10,15 +10,10 @@ Terminal 1:
 
 npm install --force
 
-npm install run-script-os --save-dev
-
-npm install bootstrap --save
-
-npm install bootstrap@4 --save
-
 npm start
 
 open your browser on http://localhost:4200/
+
 --------------------------------------------------------------
 
 Terminal 2:
