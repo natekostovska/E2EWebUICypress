@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-01-09T19:56:08.049Z",
+    "end": "2025-01-09T19:56:09.763Z",
+    "duration": 1714,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ff84eae9-6c70-441c-a19a-06ec29618b31",
+      "title": "",
+      "fullFile": "cypress\\e2e\\jsonObjects.spec.js",
+      "file": "cypress\\e2e\\jsonObjects.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4541115b-6f45-4531-ac17-2714128805a7",
+          "title": "JSON objects suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "JSON objects test",
+              "fullTitle": "JSON objects suite JSON objects test",
+              "timedOut": null,
+              "duration": 1662,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.openHomePage();\nconst simpleObject = {\n  \"key\": \"value\",\n  \"key2\": \"value2\"\n}; // key:pair\nconst simpleArrayOfValues = [\"one\", \"two\", \"three\"]; // just values\nconst arrayOfObjects = [{\n  \"key\": \"value\"\n}, {\n  \"key2\": \"value2\"\n}, {\n  \"key3\": \"value3\"\n}]; // aray of objects\nconst typesOfData = {\n  \"string\": \"A string value\",\n  \"number\": 10\n};\nconst mix = {\n  \"FirstName\": \"Natasha\",\n  \"LastName\": \"Kostovska\",\n  \"Age\": 29,\n  \"Students\": [{\n    \"firstName\": \"Sara\",\n    \"lastName\": \"Conor\"\n  }, {\n    \"firstName\": \"Bruce\",\n    \"lastName\": \"Willis\"\n  }]\n};\nconsole.log(simpleObject.key2);\nconsole.log(simpleObject[\"key2\"]);\nconsole.log(simpleArrayOfValues[1]);\nconsole.log(arrayOfObjects[2].key3);\nconsole.log(mix.Students[0].firstName);\nconst lastNameOfSecondStudent = mix.Students[1].lastName;",
+              "err": {},
+              "uuid": "922afdaf-32d9-4d08-a1dd-50c45e8c9785",
+              "parentUUID": "4541115b-6f45-4531-ac17-2714128805a7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "922afdaf-32d9-4d08-a1dd-50c45e8c9785"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1662,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

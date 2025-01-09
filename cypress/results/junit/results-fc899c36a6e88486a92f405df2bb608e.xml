@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="1.651" tests="5" failures="1">
+  <testsuite name="Root Suite" timestamp="2025-01-09T19:56:27" tests="0" file="cypress\e2e\workingwithAPIsTests.spec.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Test with backend" timestamp="2025-01-09T19:56:27" tests="5" time="1.645" failures="1">
+    <testcase name="Test with backend &quot;before each&quot; hook: log to app for &quot;verify correct request and response&quot;" time="0.457" classname="&quot;before each&quot; hook: log to app for &quot;verify correct request and response&quot;">
+      <failure message="`cy.request()` failed on:
+
+https://conduit-api.bondaracademy.com/api/users/login
+
+The response we received from your web server was:
+
+  &gt; 403: Forbidden
+
+This was considered a failure because the status code was not `2xx` or `3xx`.
+
+If you do not want status codes to cause failures pass the option: `failOnStatusCode: false`
+
+-----------------------------------------------------------
+
+The request we sent was:
+
+Method: POST
+URL: https://conduit-api.bondaracademy.com/api/users/login
+Headers: {
+  &quot;Connection&quot;: &quot;keep-alive&quot;,
+  &quot;user-agent&quot;: &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/13.17.0 Chrome/118.0.5993.159 Electron/27.3.10 Safari/537.36&quot;,
+  &quot;accept&quot;: &quot;*/*&quot;,
+  &quot;accept-encoding&quot;: &quot;gzip, deflate&quot;,
+  &quot;content-type&quot;: &quot;application/json&quot;,
+  &quot;content-length&quot;: 53
+}
+Body: {&quot;user&quot;:{&quot;email&quot;:&quot;$username&quot;,&quot;password&quot;:&quot;$password&quot;}}
+
+-----------------------------------------------------------
+
+The response we got was:
+
+Status: 403 - Forbidden
+Headers: {
+  &quot;x-powered-by&quot;: &quot;Express&quot;,
+  &quot;vary&quot;: &quot;Origin&quot;,
+  &quot;content-type&quot;: &quot;application/json; charset=utf-8&quot;,
+  &quot;etag&quot;: &quot;W/\&quot;2f-83PWxEwXkLR3WfVjo3wqB0FwKlU\&quot;&quot;,
+  &quot;x-cloud-trace-context&quot;: &quot;e5c8c801ddd854ec79c85d727d55e130&quot;,
+  &quot;date&quot;: &quot;Thu, 09 Jan 2025 19:56:29 GMT&quot;,
+  &quot;server&quot;: &quot;Google Frontend&quot;,
+  &quot;content-length&quot;: &quot;47&quot;
+}
+Body: {
+  &quot;errors&quot;: {
+    &quot;email or password&quot;: [
+      &quot;is invalid&quot;
+    ]
+  }
+}
+
+
+https://on.cypress.io/request
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Test with backend`" type="CypressError"><![CDATA[CypressError: `cy.request()` failed on:
+
+https://conduit-api.bondaracademy.com/api/users/login
+
+The response we received from your web server was:
+
+  > 403: Forbidden
+
+This was considered a failure because the status code was not `2xx` or `3xx`.
+
+If you do not want status codes to cause failures pass the option: `failOnStatusCode: false`
+
+-----------------------------------------------------------
+
+The request we sent was:
+
+Method: POST
+URL: https://conduit-api.bondaracademy.com/api/users/login
+Headers: {
+  "Connection": "keep-alive",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/13.17.0 Chrome/118.0.5993.159 Electron/27.3.10 Safari/537.36",
+  "accept": "*/*",
+  "accept-encoding": "gzip, deflate",
+  "content-type": "application/json",
+  "content-length": 53
+}
+Body: {"user":{"email":"$username","password":"$password"}}
+
+-----------------------------------------------------------
+
+The response we got was:
+
+Status: 403 - Forbidden
+Headers: {
+  "x-powered-by": "Express",
+  "vary": "Origin",
+  "content-type": "application/json; charset=utf-8",
+  "etag": "W/\"2f-83PWxEwXkLR3WfVjo3wqB0FwKlU\"",
+  "x-cloud-trace-context": "e5c8c801ddd854ec79c85d727d55e130",
+  "date": "Thu, 09 Jan 2025 19:56:29 GMT",
+  "server": "Google Frontend",
+  "content-length": "47"
+}
+Body: {
+  "errors": {
+    "email or password": [
+      "is invalid"
+    ]
+  }
+}
+
+
+https://on.cypress.io/request
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Test with backend`
+    at <unknown> (http://localhost:4200/__cypress/runner/cypress_runner.js:132876:72)
+    at tryCatcher (http://localhost:4200/__cypress/runner/cypress_runner.js:1830:23)
+    at Promise._settlePromiseFromHandler (http://localhost:4200/__cypress/runner/cypress_runner.js:1542:31)
+    at Promise._settlePromise (http://localhost:4200/__cypress/runner/cypress_runner.js:1599:18)
+    at Promise._settlePromise0 (http://localhost:4200/__cypress/runner/cypress_runner.js:1644:10)
+    at Promise._settlePromises (http://localhost:4200/__cypress/runner/cypress_runner.js:1724:18)
+    at _drainQueueStep (http://localhost:4200/__cypress/runner/cypress_runner.js:2430:12)
+    at _drainQueue (http://localhost:4200/__cypress/runner/cypress_runner.js:2423:9)
+    at Async._drainQueues (http://localhost:4200/__cypress/runner/cypress_runner.js:2439:5)
+    at Async.drainQueues (http://localhost:4200/__cypress/runner/cypress_runner.js:2309:14)
+From Your Spec Code:
+    at Context.eval (webpack://ngx-admin/./cypress/support/commands.js:51:7)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

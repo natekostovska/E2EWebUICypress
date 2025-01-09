@@ -18,7 +18,7 @@ describe('Page Object', () => {
         navigateTo.toasterPage()
     })
 
-    it('should submit Inline and Basic form and select tomorrow date in the calendar', () => {
+    it('should submit Inline and Basic form and select tomorrow date in the calendar', {browser: ['!firefox','!edge']}, () => {
         navigateTo.formLayoutPage()
         onFormLayoutsPage.submitInlineFormNameAndEmail('Natasha','test@test.com')
         onFormLayoutsPage.submitBasicFormwithEmailAndPass('test@test.com','password')

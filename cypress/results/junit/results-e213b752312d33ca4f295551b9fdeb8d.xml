@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.183" tests="8" failures="0">
+  <testsuite name="Root Suite" timestamp="2025-01-09T19:56:05" tests="0" file="cypress\e2e\firstTests1.spec.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="First test suite" timestamp="2025-01-09T19:56:05" tests="3" time="0.000" failures="0">
+    <testcase name="First test suite first test" time="0.012" classname="first test">
+    </testcase>
+    <testcase name="First test suite second test" time="0.007" classname="second test">
+    </testcase>
+    <testcase name="First test suite third test" time="0.010" classname="third test">
+    </testcase>
+  </testsuite>
+  <testsuite name="Site section" timestamp="2025-01-09T19:56:05" tests="0" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="First test suite" timestamp="2025-01-09T19:56:05" tests="2" time="0.052" failures="0">
+    <testcase name="First test suite Site section First test suite first test" time="0.011" classname="first test">
+    </testcase>
+    <testcase name="First test suite Site section First test suite second test" time="0.007" classname="second test">
+    </testcase>
+  </testsuite>
+  <testsuite name="Second test suite" timestamp="2025-01-09T19:56:05" tests="3" time="0.047" failures="0">
+    <testcase name="Second test suite first test" time="0.007" classname="first test">
+    </testcase>
+    <testcase name="Second test suite second test" time="0.006" classname="second test">
+    </testcase>
+    <testcase name="Second test suite third test" time="0.006" classname="third test">
+    </testcase>
+  </testsuite>
+</testsuites>

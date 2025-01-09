@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 1,
+    "failures": 0,
+    "start": "2025-01-09T19:56:18.346Z",
+    "end": "2025-01-09T19:56:23.259Z",
+    "duration": 4913,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 50,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "66e84150-a9b7-4a65-affd-c2d6dc2bfada",
+      "title": "",
+      "fullFile": "cypress\\e2e\\testWithPageObjects.spec.js",
+      "file": "cypress\\e2e\\testWithPageObjects.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "440efd46-8230-45f2-a4a8-c96c4b829ff0",
+          "title": "Page Object",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "navigation between pages",
+              "fullTitle": "Page Object navigation between pages",
+              "timedOut": null,
+              "duration": 4822,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.wait(500);\n_navigationPage.navigateTo.formLayoutPage();\n_navigationPage.navigateTo.datePickerPage();\n_navigationPage.navigateTo.smartTablePage();\n_navigationPage.navigateTo.tooltipPage();\n_navigationPage.navigateTo.toasterPage();",
+              "err": {},
+              "uuid": "7112a0be-8e95-4c2b-ab58-e5d4ee5ffd7f",
+              "parentUUID": "440efd46-8230-45f2-a4a8-c96c4b829ff0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should submit Inline and Basic form and select tomorrow date in the calendar (skipped due to browser)",
+              "fullTitle": "Page Object should submit Inline and Basic form and select tomorrow date in the calendar (skipped due to browser)",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "_navigationPage.navigateTo.formLayoutPage();\n_formLayoutsPage.onFormLayoutsPage.submitInlineFormNameAndEmail('Natasha', 'test@test.com');\n_formLayoutsPage.onFormLayoutsPage.submitBasicFormwithEmailAndPass('test@test.com', 'password');\ncy.wait(500);\n_navigationPage.navigateTo.datePickerPage();\n_datePickerPage.onDatePickerPage.selectCommonDatePickerDateFromToday(1);\n_datePickerPage.onDatePickerPage.selectDatepickerWithRangeFromToday(7, 14);\n_navigationPage.navigateTo.smartTablePage();\n_smartTablePage.onSmartTablePage.addNewRecordWithFirstAndLastName('Natasha', 'Kostovska');\n_smartTablePage.onSmartTablePage.updateAgeByFirstName('Natasha', '29');\n_smartTablePage.onSmartTablePage.deleteRowByIndex(1);",
+              "err": {},
+              "uuid": "74efc3dd-3340-4899-8fae-395bf31c4697",
+              "parentUUID": "440efd46-8230-45f2-a4a8-c96c4b829ff0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7112a0be-8e95-4c2b-ab58-e5d4ee5ffd7f"
+          ],
+          "failures": [],
+          "pending": [
+            "74efc3dd-3340-4899-8fae-395bf31c4697"
+          ],
+          "skipped": [],
+          "duration": 4822,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

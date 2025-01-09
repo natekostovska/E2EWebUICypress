@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="4.913" tests="2" failures="0" skipped="1">
+  <testsuite name="Root Suite" timestamp="2025-01-09T19:56:18" tests="0" file="cypress\e2e\testWithPageObjects.spec.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Page Object" timestamp="2025-01-09T19:56:18" tests="2" time="4.907" failures="0">
+    <testcase name="Page Object navigation between pages" time="4.822" classname="navigation between pages">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,39 @@
+{
+    "articles": [
+        {
+            "slug": "ThisIsATitle1",
+            "title": "Title 1",
+            "description": "This is a title 1",
+            "body":"This is a body of article 1",
+            "tagList": [],
+            "createdAt": "2024-12-25T21:52:32.682Z",
+            "updatedAt": "2024-12-25T21:52:32.682Z",
+            "favorited": false,
+            "favoritesCount": 1,
+            "author": {
+                "username": "cypressTestNK",
+                "bio": null,
+                "image": "https://storage.googleapis.com/bondar-academy-visuals/Android.png",
+                "following": false
+            }
+        },
+        {
+            "slug": "ThisIsATitle2",
+            "title": "Title 2",
+            "description": "This is a title 2",
+            "body": "This is a body of article 2",
+            "tagList": [],
+            "createdAt": "2024-12-25T21:50:38.825Z",
+            "updatedAt": "2024-12-25T21:50:38.825Z",
+            "favorited": false,
+            "favoritesCount": 5,
+            "author": {
+                "username": "cypressTestNK",
+                "bio": null,
+                "image": "https://storage.googleapis.com/bondar-academy-visuals/Android.png",
+                "following": false
+            }
+        }
+    ],
+    "articlesCount": 2
+}

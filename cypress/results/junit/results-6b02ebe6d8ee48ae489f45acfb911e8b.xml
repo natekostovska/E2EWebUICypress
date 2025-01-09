@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="22.686" tests="11" failures="0">
+  <testsuite name="Root Suite" timestamp="2025-01-09T19:55:41" tests="0" file="cypress\e2e\firstTests.spec.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="First test suite" timestamp="2025-01-09T19:55:41" tests="11" time="22.683" failures="0">
+    <testcase name="First test suite first test" time="2.273" classname="first test">
+    </testcase>
+    <testcase name="First test suite second test" time="2.117" classname="second test">
+    </testcase>
+    <testcase name="First test suite save subject of the command" time="1.765" classname="save subject of the command">
+    </testcase>
+    <testcase name="First test suite extract text values" time="1.764" classname="extract text values">
+    </testcase>
+    <testcase name="First test suite radio buttons" time="1.235" classname="radio buttons">
+    </testcase>
+    <testcase name="First test suite checkboxes" time="1.649" classname="checkboxes">
+    </testcase>
+    <testcase name="First test suite Date picker" time="2.489" classname="Date picker">
+    </testcase>
+    <testcase name="First test suite Lists and dropdowns" time="1.329" classname="Lists and dropdowns">
+    </testcase>
+    <testcase name="First test suite Web Tables" time="5.095" classname="Web Tables">
+    </testcase>
+    <testcase name="First test suite tooltip" time="1.375" classname="tooltip">
+    </testcase>
+    <testcase name="First test suite dialog box" time="1.155" classname="dialog box">
+    </testcase>
+  </testsuite>
+</testsuites>

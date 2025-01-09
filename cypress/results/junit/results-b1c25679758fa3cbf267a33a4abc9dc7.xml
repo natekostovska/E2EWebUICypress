@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="29.156" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2025-01-09T20:48:07" tests="0" file="cypress\e2e\testWithPageObjects.spec.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Page Object" timestamp="2025-01-09T20:48:07" tests="2" time="29.109" failures="0">
+    <testcase name="Page Object navigation between pages" time="7.725" classname="navigation between pages">
+    </testcase>
+    <testcase name="Page Object should submit Inline and Basic form and select tomorrow date in the calendar" time="20.743" classname="should submit Inline and Basic form and select tomorrow date in the calendar">
+    </testcase>
+  </testsuite>
+</testsuites>
